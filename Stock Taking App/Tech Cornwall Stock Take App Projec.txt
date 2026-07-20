@@ -1,0 +1,60 @@
+Tech Cornwall Stock Take App Project Overview  
+Welcome to the Project  
+This project is an opportunity to build a real application that will be used by a real 
+organisation.  
+Rather than creating software purely for assessment purposes, your work will solve a 
+genuine problem faced by Tech Cornwall. At the end of the project, the aim is to have a 
+working application that staff can use on their own mobile phones to complete an an nual 
+stock take.  
+Throughout the project you should remember that your goal is not simply to write code. 
+Your goal is to make a task that currently requires time, concentration and manual 
+recording as quick, simple and reliable as possible.  
+This document explains the story behind the application, why it is needed, and how it will 
+be used. The accompanying project documents contain the detailed requirements and 
+should always be treated as the source of truth when making design or implementatio n 
+decisions.  
+The documents provided alongside this overview are:  
+• Developer Handoff Pack . This explains the functional requirements, business 
+rules and expected behaviour of the application.  
+• Catalogue Behaviour Specification . This describes how users interact with the 
+catalogue and the principles behind the user interface.  
+• Stock Take Mobile Web App, Agile User Stories and Acceptance Criteria . 
+This contains the complete list of user stories and acceptance criteria. These 
+stories should be completed in the order they appear, as each section builds 
+naturally on the previous one.  
+Whenever there is uncertainty, these documents should take priority over this overview.  
+ 
+    
+ 
+The Story  
+Tech Cornwall owns a variety of equipment that is used throughout the year.  
+Some equipment is used within Tech Cornwall itself, while other items belong to Agile on 
+the Beach. Equipment is stored across two different locations and may be moved 
+between them throughout the year.  
+At least once each year, every item needs to be counted. This information is used to 
+understand what equipment is available and to support the organisation’s end of year 
+asset valuation.  
+Instead of carrying paper lists or trying to use a laptop in storage areas, staff should be 
+able to complete the entire stock take using their own mobile phones.  
+The application you will build makes this possible.  
+The app allows staff to walk around each location, find equipment, record what they 
+discover, note the condition of items and capture serial numbers where required. At any 
+point during the process they can download the latest results as a single file, allo wing 
+progress to be reviewed before the stock take is complete.  
+The final result should be a simple, reliable application that produces consistent results 
+regardless of which member of staff carries out the stock take.  
+The Problem  
+Imagine arriving at a storage room containing shelves of equipment.  
+There may be monitors, laptops, networking equipment, cables, accessories, event 
+equipment and many other items.  
+Trying to remember everything before writing it down is slow.  
+Using a desktop computer is impractical because the equipment is spread around the 
+room.  
+Using paper creates additional work because someone must later transfer everything 
+into a spreadsheet.  
+The purpose of this application is to remove those problems.  
+Instead of writing notes, the user simply opens the application on their phone, selects 
+where they are working and taps through the catalogue as they discover equipment.  
+The application becomes a digital clipboard that guides the user through the counting 
+process while keeping the information organised automatically.  
+ 
