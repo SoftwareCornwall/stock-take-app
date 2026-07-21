@@ -4,107 +4,97 @@ A mobile-first web application for conducting annual equipment stock takes with 
 
 ## Features
 
-- 📱 **Mobile-first design** – optimized for phones and tablets
-- 🚀 **Fast interaction** – tap & count with minimal keyboard input
-- 📊 **CSV export** – generate reports by department
-- 🔐 **Shared login** – single set of credentials for team
-- 💾 **Local storage** – data persists in browser
-- 📋 **Department management** – organize by super and sub-departments
-- 🏷️ **Serial tracking** – optional item serial numbers
-- ✅ **Session completion** – lock sessions when done, archive later
+- Mobile-first design optimized for phones and tablets
+- Fast interaction with tap and count, minimal keyboard input
+- CSV export to generate reports by department
+- Shared login with single set of credentials for team
+- Local storage so data persists in browser
+- Department management organized by super and sub-departments
+- Optional serial number tracking for items
+- Session completion to lock sessions when done
 
 ## Quick Start
 
-### Option 1: Use the Static Files Directly
+### Use Locally
 
-1. Download or clone this repository
+1. Clone this repository
 2. Open `Stock Taking App/index.html` in a web browser
 3. Login with demo credentials:
-   - **Username**: `staff`
-   - **Password**: `stocktake`
+   - Username: `staff`
+   - Password: `stocktake`
 
-### Option 2: Deploy to GitHub Pages
+### Deploy to GitHub Pages
 
-1. Go to your repository Settings → Pages
+1. Go to repository Settings > Pages
 2. Under "Source", select `main` branch and `/Stock Taking App` folder
 3. Click Save
 4. Your app will be live at `https://yourusername.github.io/stock-take-app`
 
-### Option 3: Deploy to Vercel (Recommended)
+### Deploy to Vercel
 
-1. Install [Vercel CLI](https://vercel.com/download) or connect via GitHub
-2. Create a `vercel.json` in the root:
+1. Create a `vercel.json` in the root:
    ```json
    {
      "public": "Stock Taking App"
    }
    ```
-3. From the repo root: `vercel`
-4. Your app will be live instantly with a public URL
+2. From the repo root: `vercel`
+3. Your app will be live instantly with a public URL
 
-### Option 4: Deploy to Netlify
+### Deploy to Netlify
 
 1. Drag the `Stock Taking App` folder to [Netlify Drop](https://app.netlify.com/drop)
 2. Or connect your GitHub repo and set the publish directory to `Stock Taking App`
-3. Get a live URL with automatic updates
 
 ## Usage
 
-### Starting a Stock Take
-
-1. **Select Department** – Choose a super department (Tech Cornwall or Agile on the Beach)
-2. **Add Sub Department** – Create or select a sub department
-3. **Create Session** – Start a new session with an optional note
-4. **Count Items** – Tap items to open detail view
-5. **Update Quantity** – Use +/− buttons to count
-6. **Set Condition** – Mark items as New, Good, Fair, Damaged, or Other
-7. **Serial Numbers** – Add if tracking serial items
-8. **Confirm & Save** – Press "Confirm update" to save changes
-
-### Completing & Exporting
-
-- **Complete Session** – Lock session when done (prevents further edits)
-- **Archive Session** – Move completed sessions to archive
-- **Export CSV** – Generate separate files for serial and standard items
-- **View History** – Switch between Active, Completed, and Archived views
+1. Select Department - Choose Tech Cornwall or Agile on the Beach
+2. Add Sub Department - Create or select a sub department
+3. Create Session - Start a new session with an optional note
+4. Count Items - Tap items to open the detail view
+5. Update Quantity - Use +/- buttons to count
+6. Set Condition - Mark items as New, Good, Fair, Damaged, or Other
+7. Add Serial Numbers - If tracking serial items
+8. Confirm - Press "Confirm update" to save changes
+9. Complete Session - Lock session when done
+10. Export CSV - Generate separate files for serial and standard items
 
 ## Default Credentials
 
-- **Username**: `staff`
-- **Password**: `stocktake`
+- Username: `staff`
+- Password: `stocktake`
 
 These can be changed in the app's Configuration panel.
 
 ## Data Storage
 
-All data is stored locally in your browser using `localStorage`. This means:
+All data is stored locally in your browser using localStorage.
 
-- ✅ Data persists between sessions
-- ✅ Works offline
-- ❌ Not synced across devices
-- ❌ Clearing browser data will delete everything
+- Data persists between sessions
+- Works offline
+- Not synced across devices
+- Clearing browser data will delete everything
 
-**Backup your data**: Export sessions to CSV regularly to preserve records.
+Regularly export sessions to CSV to preserve records.
 
 ## Technical Details
 
-### Technology Stack
-- **Language**: Vanilla JavaScript (no build tools needed)
-- **Styling**: Plain CSS with CSS variables
-- **Storage**: Browser localStorage
-- **No dependencies**: Runs entirely in the browser
+### Stack
+- Language: Vanilla JavaScript (no build tools needed)
+- Styling: Plain CSS with CSS variables
+- Storage: Browser localStorage
+- No external dependencies
 
 ### File Structure
 ```
 Stock Taking App/
-├── index.html           # Main HTML entry point
-├── styles.css           # All styling
-├── app-epics3-11.js     # Complete application logic
-└── app-epics1-2.js      # Previous version (reference)
+├── index.html           Main HTML entry point
+├── styles.css           All styling
+├── app-epics3-11.js     Complete application logic
+└── app-epics1-2.js      Previous version (reference)
 ```
 
 ### Browser Support
-Works on all modern browsers:
 - Chrome/Edge 90+
 - Firefox 88+
 - Safari 14+
@@ -114,7 +104,7 @@ Works on all modern browsers:
 
 ### Change Default Credentials
 
-Edit the `DEFAULT_CREDENTIALS` in `app-epics3-11.js`:
+Edit `DEFAULT_CREDENTIALS` in `app-epics3-11.js`:
 ```javascript
 const DEFAULT_CREDENTIALS = {
   username: 'staff',
@@ -122,7 +112,9 @@ const DEFAULT_CREDENTIALS = {
 };
 ```
 
-Then change via the app's Configuration panel, or directly:
+### Modify Departments
+
+Edit `SUPER_DEPARTMENTS` in `app-epics3-11.js`:
 ```javascript
 const SUPER_DEPARTMENTS = ['Tech Cornwall', 'Agile on the Beach'];
 ```
@@ -154,23 +146,10 @@ const DEFAULT_CATALOGUE = [
 - Ensure pop-ups aren't blocked
 - Try a different browser
 
-## Future Enhancements
-
-See `Stock Taking App/developer_handoff.md` for product roadmap. Potential additions:
-- Backend sync for multi-device use
-- Barcode scanning
-- Offline mode
-- Role-based permissions
-- Audit logging
-
-## Support & Feedback
+## Support
 
 For issues or feature requests, open an issue on GitHub or contact the development team.
 
 ## License
 
 Internal use only.
-
----
-
-**Last updated**: July 2026
